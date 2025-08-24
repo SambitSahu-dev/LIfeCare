@@ -1,8 +1,11 @@
-import React from 'react';
-import { GraduationCap, Award, Phone } from 'lucide-react';
+import React from "react";
+import { GraduationCap, Award, Phone } from "lucide-react";
 
-// Images must be in the public folder: public/images/docters/
-const IMAGE_PATH = "/images/docters/";
+// ✅ Import images from src/assets (Vite will handle bundling & hashing)
+import gokulImage from "../assets/docters/Dr-GOKULANANDA-SENAPATI.jpeg";
+import pralayaImage from "../assets/docters/Dr-Pralaya-Jyoti-Sahoo.jpeg";
+import subhalaxmiImage from "../assets/docters/Dr-Subhalaxmi-Mohanty.jpeg";
+import karttickImage from "../assets/docters/Dr-Karttick-Kumar-Mahalik.jpeg";
 
 const Doctors: React.FC = () => {
   const doctors = [
@@ -13,10 +16,10 @@ const Doctors: React.FC = () => {
       expertise: [
         "Orthopedic & Neurological Physiotherapy",
         "Post-Surgical Rehabilitation",
-        "Chronic Pain Management"
+        "Chronic Pain Management",
       ],
       experience: "10+ Years",
-      image:IMAGE_PATH+"Dr-GOKULANANDA-SENAPATI.jpeg"
+      image: gokulImage,
     },
     {
       name: "Dr. Pralaya Jyoti Sahoo",
@@ -25,10 +28,10 @@ const Doctors: React.FC = () => {
       expertise: [
         "Sports Injury Rehabilitation",
         "Pain Management",
-        "Neuro-Rehabilitation"
+        "Neuro-Rehabilitation",
       ],
       experience: "5+ Years",
-      image: IMAGE_PATH + "Dr-Pralaya-Jyoti-Sahoo.jpeg" // Renamed to remove spaces
+      image: pralayaImage,
     },
     {
       name: "Dr. Subhalaxmi Mohanty",
@@ -37,11 +40,11 @@ const Doctors: React.FC = () => {
       expertise: [
         "Orthopedic & Neurological Physiotherapy",
         "Post-Surgical Rehabilitation",
-        "Chronic Pain Management"
+        "Chronic Pain Management",
       ],
       experience: "3+ Years",
-      image: IMAGE_PATH + "Dr-Subhalaxmi-Mohanty.jpeg" // Renamed to remove spaces
-    },    
+      image: subhalaxmiImage,
+    },
     {
       name: "Dr. Karttick Kumar Mahalik",
       role: "Assistant Therapist",
@@ -49,11 +52,11 @@ const Doctors: React.FC = () => {
       expertise: [
         "Orthopedic & Neurological Physiotherapy",
         "Post-Surgical Rehabilitation",
-        "Chronic Pain Management"
+        "Chronic Pain Management",
       ],
       experience: "3+ Years",
-      image: IMAGE_PATH + "Dr-Karttick-Kumar-Mahalik.jpeg" // Renamed to remove spaces
-    }
+      image: karttickImage,
+    },
   ];
 
   return (
@@ -66,7 +69,9 @@ const Doctors: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Our experienced team of certified physiotherapists is dedicated to providing you with the highest quality care and personalized treatment plans.
+            Our experienced team of certified physiotherapists is dedicated to
+            providing you with the highest quality care and personalized
+            treatment plans.
           </p>
         </div>
 
@@ -83,12 +88,6 @@ const Doctors: React.FC = () => {
                   src={doctor.image}
                   alt={doctor.name}
                   className="w-full h-full object-cover"
-                  onError={(e) => {
-                    // Fallback to a placeholder if image fails to load
-                    console.error(`Failed to load image: ${doctor.image}`);
-                    const target = e.target as HTMLImageElement;
-                    target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDQwMCAzMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzIwIiBmaWxsPSIjRjNGNEY2Ii8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM5Q0EzQUYiLz4KPHBhdGggZD0iTTE0MCAyMDBIMjYwVjI2MEgxNDBWMjAwWiIgZmlsbD0iIzlDQTNBRiIvPgo8dGV4dCB4PSIyMDAiIHk9IjI5MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzZCNzI4MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0Ij5Eb2N0b3IgUGhvdG88L3RleHQ+Cjwvc3ZnPgo=';
-                  }}
                 />
                 {/* Soft Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
@@ -101,8 +100,12 @@ const Doctors: React.FC = () => {
 
               {/* Doctor Info */}
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">{doctor.name}</h3>
-                <p className="text-blue-600 font-semibold mb-4">{doctor.role}</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  {doctor.name}
+                </h3>
+                <p className="text-blue-600 font-semibold mb-4">
+                  {doctor.role}
+                </p>
 
                 {/* Education */}
                 <div className="flex items-center mb-4">
@@ -118,7 +121,10 @@ const Doctors: React.FC = () => {
                   </h4>
                   <ul className="space-y-2">
                     {doctor.expertise.map((skill, idx) => (
-                      <li key={idx} className="flex items-center text-gray-600">
+                      <li
+                        key={idx}
+                        className="flex items-center text-gray-600"
+                      >
                         <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
                         {skill}
                       </li>
@@ -126,7 +132,7 @@ const Doctors: React.FC = () => {
                   </ul>
                 </div>
 
-                {/* Contact Button - Linked to Google Form */}
+                {/* Contact Button */}
                 <a
                   href="https://forms.gle/6DwCUEpJGZzWqpUp8"
                   target="_blank"
@@ -144,9 +150,12 @@ const Doctors: React.FC = () => {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <div className="bg-blue-600 text-white rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Ready to Start Your Recovery Journey?</h3>
+            <h3 className="text-2xl font-bold mb-4">
+              Ready to Start Your Recovery Journey?
+            </h3>
             <p className="text-blue-100 mb-6">
-              Our expert physiotherapists are here to help you achieve your health and wellness goals with personalized care.
+              Our expert physiotherapists are here to help you achieve your
+              health and wellness goals with personalized care.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

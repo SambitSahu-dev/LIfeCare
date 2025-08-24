@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, MapPin, Clock, Heart } from 'lucide-react';
+import introImage from '../assets/intro_image/intro_1.png'; // ✅ Import from src/assets
 
 const Hero: React.FC = () => {
   return (
@@ -61,7 +62,7 @@ const Hero: React.FC = () => {
           <div className="relative">
             {/* Main Image */}
             <img
-              src="../intro_image/intro_1.png"  // ✅ Image path inside public/intro_image/
+              src={introImage} // ✅ Use imported image
               alt="Physiotherapy Treatment"
               className="rounded-2xl shadow-lg w-full object-cover"
             />

@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
           <div className="relative">
             {/* Main Image */}
             <img
-              src="/intro_image/intro_1.png"  // ✅ Image path inside public/intro_image/
+              src="../intro_image/intro_1.png"  // ✅ Image path inside public/intro_image/
               alt="Physiotherapy Treatment"
               className="rounded-2xl shadow-lg w-full object-cover"
             />

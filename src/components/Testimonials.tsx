@@ -1,6 +1,14 @@
 import React from 'react';
 import { Star, Quote, Play, ExternalLink } from 'lucide-react';
-const IMAGE_PATH = "/images/testimonials/";
+
+// Import all testimonial images from assets
+const testimonialImages = import.meta.glob("../assets/testimonials/*.{jpg,jpeg,png}", { eager: true });
+const testimonialImageMap: Record<string, string> = {};
+
+Object.entries(testimonialImages).forEach(([path, mod]) => {
+  const fileName = path.split("/").pop() || "";
+  testimonialImageMap[fileName] = (mod as any).default;
+});
 
 const Testimonials: React.FC = () => {
   const testimonials = [
@@ -9,7 +17,7 @@ const Testimonials: React.FC = () => {
       condition: "Post-Knee Surgery",
       rating: 5,
       text: "After my knee surgery, the clinic's team helped me recover in record time. Amazing care!",
-      image: IMAGE_PATH+"Sudhir Kumar Sahu.jpeg"
+      image: testimonialImageMap["Sudhir Kumar Sahu.jpeg"]
     },
     {
       name: "R. Patnaik",

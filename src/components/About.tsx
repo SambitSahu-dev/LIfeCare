@@ -5,8 +5,8 @@ import introImage from '../assets/intro_image/intro_1.png'; // ✅ Import image
 
 const About: React.FC = () => {
   const stats = [
-    { icon: Users, value: '300+', label: 'Patients Treated' },
-    { icon: Clock, value: '3+', label: 'Years Experience' },
+    { icon: Users, value: '3000+', label: 'Patients Treated' },
+    { icon: Clock, value: '9+', label: 'Years Experience' },
     { icon: Star, value: '4.9', label: 'Patient Rating' },
     { icon: Award, value: '100+', label: 'Success Stories' }
   ];
@@ -17,7 +17,7 @@ const About: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-            Trusted Physiotherapy Care in Bhubaneswar with 3+ Years of Combined Experience
+            Trusted Physiotherapy Care in Bhubaneswar with 9+ Years of Combined Experience
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
         </div>

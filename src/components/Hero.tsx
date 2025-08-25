@@ -11,11 +11,11 @@ const Hero: React.FC = () => {
           <div className="lg:pr-8">
             <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <Heart className="w-4 h-4 mr-2" />
-              15+ Years Combined Experience
+              9+ Years Combined Experience
             </div>
             
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Physiotherapy in Bhubaneswar – 
+              Physiotherapy Clinic in Bhubaneswar – 
               <span className="text-blue-600"> faster relief, improve mobility, increase your hope</span>
             </h1>
             
@@ -43,13 +43,21 @@ const Hero: React.FC = () => {
 
             {/* Quick Info */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-8 border-t border-gray-200">
-              <div className="flex items-center">
-                <MapPin className="w-5 h-5 text-blue-600 mr-2" />
-                <span className="text-sm text-gray-600">Bhubaneswar, Odisha</span>
-              </div>
+            <div className="flex items-center">
+              <MapPin className="w-5 h-5 text-blue-600 mr-2" />
+              <a 
+                href="https://www.google.com/maps?q=Life+Care+Physiotherapy+Clinic" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-sm text-gray-600 hover:text-blue-600"
+              >
+                Bhubaneswar, Odisha
+              </a>
+            </div>
+
               <div className="flex items-center">
                 <Clock className="w-5 h-5 text-blue-600 mr-2" />
-                <span className="text-sm text-gray-600">Mon-Sat: 9AM-7PM</span>
+                <span className="text-sm text-gray-600">Mon-Sat: 9AM-9PM</span>
               </div>
               <div className="flex items-center">
                 <Heart className="w-5 h-5 text-blue-600 mr-2" />
@@ -70,7 +78,7 @@ const Hero: React.FC = () => {
             {/* Floating cards */}
             <div className="absolute -top-4 -right-4 bg-white p-4 rounded-lg shadow-lg">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">300+</div>
+                <div className="text-2xl font-bold text-blue-600">3000+</div>
                 <div className="text-sm text-gray-600">Happy Patients</div>
               </div>
             </div>

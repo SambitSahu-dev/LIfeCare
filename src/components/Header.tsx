@@ -36,19 +36,30 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
       <div className="bg-blue-900 text-white py-2 px-4 text-sm">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-4 mb-2 md:mb-0">
-            <div className="flex items-center">
-              <Phone className="w-4 h-4 mr-1" />
-              <span>8093909684</span>
-            </div>
+          <div className="flex items-center">
+            <Phone className="w-4 h-4 mr-1 text-white" />
+            <a href="tel:8093909684" className="text-white hover:text-blue-300">
+              8093909684
+            </a>
+          </div>
+
             <div className="flex items-center">
               <Clock className="w-4 h-4 mr-1" />
-              <span>Mon-Sat: 9AM-7PM</span>
+              <span>Mon-Sat: 9AM-9PM</span>
             </div>
           </div>
           <div className="flex items-center">
-            <MapPin className="w-4 h-4 mr-1" />
-            <span>Bhubaneswar, Odisha</span>
+            <MapPin className="w-4 h-4 mr-1 text-white" />
+            <a 
+              href="https://www.google.com/maps?q=Life+Care+Physiotherapy+Clinic+Bhubaneswar+Odisha" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-sm text-white hover:text-blue-300"
+            >
+              Bhubaneswar, Odisha
+            </a>
           </div>
+
         </div>
       </div>
 

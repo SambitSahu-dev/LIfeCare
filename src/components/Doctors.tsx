@@ -18,7 +18,7 @@ const Doctors: React.FC = () => {
         "Post-Surgical Rehabilitation",
         "Chronic Pain Management",
       ],
-      experience: "10+ Years",
+      experience: "3+ Years",
       image: gokulImage,
     },
     {
@@ -30,7 +30,7 @@ const Doctors: React.FC = () => {
         "Pain Management",
         "Neuro-Rehabilitation",
       ],
-      experience: "5+ Years",
+      experience: "2+ Years",
       image: pralayaImage,
     },
     {
@@ -54,7 +54,7 @@ const Doctors: React.FC = () => {
         "Post-Surgical Rehabilitation",
         "Chronic Pain Management",
       ],
-      experience: "3+ Years",
+      experience: "2+ Years",
       image: karttickImage,
     },
   ];

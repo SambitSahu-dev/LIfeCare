@@ -1,25 +1,35 @@
 import React from 'react';
 import { Activity, Zap, Heart, Settings, Users, Shield } from 'lucide-react';
 
+// ✅ Auto-import all service images (both JPG & PNG)
+const serviceImages = import.meta.glob('../assets/service_image/*.{jpg,jpeg,png}', { eager: true });
+
 const Services: React.FC = () => {
   const treatments = [
     { name: 'Manual Therapy', category: 'hands-on' },
-    { name: 'Cupping Therapy', category: 'alternative' },
-    { name: 'Dry Needling', category: 'advanced' },
-    { name: 'Kinesio Taping', category: 'sports' },
     { name: 'Deep Tissue Release', category: 'hands-on' },
     { name: 'TENS Therapy', category: 'electrical' },
     { name: 'IFT (Interferential Therapy)', category: 'electrical' },
     { name: 'MST (Muscle Stimulation)', category: 'electrical' },
-    { name: 'Faradic Foot Bath', category: 'specialized' },
+    { name: 'Cupping Therapy', category: 'alternative' },
+    { name: 'Dry Needling', category: 'advanced' },
+    { name: 'Kinesio Taping', category: 'sports' },
     { name: 'Lumbar & Cervical Traction', category: 'mechanical' },
     { name: 'Laser Therapy', category: 'advanced' },
-    { name: 'Infrared Therapy', category: 'heat' },
     { name: 'Ultrasound Therapy', category: 'advanced' },
     { name: 'Paraffin Wax Therapy', category: 'heat' },
     { name: 'Moist & Dry Heat Therapy', category: 'heat' },
     { name: 'Customized Exercise Therapy', category: 'exercise' }
   ];
+
+  // ✅ Convert imported images into a lookup map
+  const imagesMap: Record<string, string> = {};
+  Object.entries(serviceImages).forEach(([path, mod]: any) => {
+    const fileName = path.split('/').pop()?.split('.')[0]; // remove folder & extension
+    if (fileName) {
+      imagesMap[fileName.toLowerCase()] = mod.default;
+    }
+  });
 
   const serviceCategories = [
     {
@@ -105,30 +115,46 @@ const Services: React.FC = () => {
                     {treatment.name}
                   </li>
                 ))}
-                {category.treatments.length > 3 && (
-                  <li className="text-sm text-blue-600 font-medium">
-                    +{category.treatments.length - 3} more treatments
-                  </li>
-                )}
               </ul>
             </div>
           ))}
         </div>
 
-        {/* All Treatments List */}
-        <div className="bg-gray-50 rounded-2xl p-8 mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">All Available Treatments</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {treatments.map((treatment, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  <span className="text-sm font-medium text-gray-800">{treatment.name}</span>
-                </div>
-              </div>
-            ))}
+          {/* All Treatments List with Images */}
+          <div className="bg-gray-50 rounded-2xl p-8 mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+              All Available Treatments
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {treatments.map((treatment, index) => {
+                const imgKey = treatment.name.toLowerCase(); // match file names
+                const imageSrc = imagesMap[imgKey];
+
+                return (
+                  <div
+                    key={index}
+                    className="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow flex flex-col items-center"
+                  >
+                    {imageSrc ? (
+                      <img
+                        src={imageSrc}
+                        alt={treatment.name}
+                        className="w-50 h-32 object-cover rounded-lg mb-3"  // ⬅️ bigger size
+                      />
+                    ) : (
+                      <div className="w-32 h-32 bg-gray-200 rounded-lg mb-3 flex items-center justify-center text-gray-400 text-xs">
+                        No Image
+                      </div>
+                    )}
+                    <span className="text-sm font-medium text-gray-800 text-center">
+                      {treatment.name}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-        </div>
+
 
         {/* Why Choose Us */}
         <div>
@@ -143,32 +169,6 @@ const Services: React.FC = () => {
                 <p className="text-gray-600">{item.description}</p>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-2xl p-8">
-            <h3 className="text-2xl font-bold mb-4">Home Physiotherapy Available</h3>
-            <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Can't visit our clinic? No problem! We provide professional physiotherapy services at your home across Bhubaneswar and nearby areas.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:8093909684"
-                className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors"
-              >
-                Call for Home Service: 8093909684
-              </a>
-              <a
-                href="https://forms.gle/6DwCUEpJGZzWqpUp8"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
-              >
-                Book Appointment
-              </a>
-            </div>
           </div>
         </div>
       </div>

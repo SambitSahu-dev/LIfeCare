@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, MapPin, Clock, Heart } from 'lucide-react';
-import introImage from '../assets/intro_image/intro_1.png'; // ✅ Import from src/assets
+import introImage from '../assets/intro_image/intro_2.png'; // ✅ Import from src/assets
 
 const Hero: React.FC = () => {
   return (
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
             {/* Floating cards */}
             <div className="absolute -top-4 -right-4 bg-white p-4 rounded-lg shadow-lg">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">500+</div>
+                <div className="text-2xl font-bold text-blue-600">300+</div>
                 <div className="text-sm text-gray-600">Happy Patients</div>
               </div>
             </div>

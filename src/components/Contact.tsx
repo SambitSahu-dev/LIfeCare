@@ -126,8 +126,9 @@ const Contact: React.FC = () => {
                 <a href="https://www.facebook.com/profile.php?id=61579179634196" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-lg transition-colors">
                   <Facebook className="w-5 h-5" />
                 </a>
-                <a href="https://wa.me/=(+918093909684" target="_blank" rel="noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-lg transition-colors">
-                  <MessageSquare className="w-5 h-5" />
+                <a href="https://wa.me/918093909684?text=Hello Team Life Care Physiotherapy Clinic, I have an inquiry. Could you please get in touch with me?" 
+                target="_blank" rel="noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-lg transition-colors">
+                  <FaWhatsapp size={22} />
                 </a>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, Users, Clock, Heart, Home, Star } from 'lucide-react';
+
 import introImage from '../assets/intro_image/intro_1.png'; // ✅ Import image
 
 const About: React.FC = () => {
@@ -16,7 +17,7 @@ const About: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-            Trusted Physiotherapy Care in Bhubaneswar with 15+ Years of Combined Experience
+            Trusted Physiotherapy Care in Bhubaneswar with 3+ Years of Combined Experience
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
         </div>

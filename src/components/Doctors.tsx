@@ -1,7 +1,7 @@
 import React from "react";
 import { GraduationCap, Award, Phone } from "lucide-react";
 
-// ✅ Import images from src/assets (Vite will handle bundling & hashing)
+
 import gokulImage from "../assets/docters/Dr-GOKULANANDA-SENAPATI.jpeg";
 import pralayaImage from "../assets/docters/Dr-Pralaya-Jyoti-Sahoo.jpeg";
 import subhalaxmiImage from "../assets/docters/Dr-Subhalaxmi-Mohanty.jpeg";
@@ -23,8 +23,8 @@ const Doctors: React.FC = () => {
     },
     {
       name: "Dr. Pralaya Jyoti Sahoo",
-      role: "Junior Physiotherapist",
-      education: "Utkal University",
+      role: "Consultant Physiotherapist",
+      education: "BPT (Utkal University)",
       expertise: [
         "Sports Injury Rehabilitation",
         "Pain Management",

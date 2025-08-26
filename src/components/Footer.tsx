@@ -1,8 +1,8 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Instagram, Facebook, MessageSquare, ExternalLink, Heart, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Facebook, ExternalLink, Heart, Clock } from 'lucide-react';
 import logo from '../assets/Life Care Logo_1.png';
 import sahnarLogo from '../assets/sahnar_logo_1.png';
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaYoutube } from "react-icons/fa";   // ✅ Added YouTube here
 
 const Footer: React.FC = () => {
   const handleMenuClick = (sectionId: string) => {
@@ -71,13 +71,22 @@ const Footer: React.FC = () => {
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="https://wa.me/918093909684?text=Hello Team Life Care Physiotherapy Clinic, I would like to inquire about your services. Please contact me at your earliest convenience. "
+                href="https://wa.me/918093909684?text=Hello Team Life Care Physiotherapy Clinic, I would like to inquire about your services. Please contact me at your earliest convenience."
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
                 className="bg-gray-800 hover:bg-green-600 p-2 rounded-lg transition-colors"
               >
                 <FaWhatsapp size={22} />
+              </a>
+              <a
+                href="https://www.youtube.com/@LifecarePhysiotherapy.01"  // 🔹 Replace with your actual channel link
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="bg-gray-800 hover:bg-red-600 p-2 rounded-lg transition-colors"
+              >
+                <FaYoutube size={22} />
               </a>
             </div>
 
@@ -123,7 +132,7 @@ const Footer: React.FC = () => {
                   <Clock className="w-4 h-5 text-blue-400 mt-0.5 mr-2 flex-shrink-0" />
                   <div>
                     <p className="font-semibold mb-1">Working Hours</p>
-                    <p className="text-sm">Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                    <p className="text-sm">Monday - Saturday: 9:00 AM - 9:00 PM</p>
                     <p className="text-sm">Sunday: Closed</p>
                   </div>
                 </div>

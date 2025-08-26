@@ -106,7 +106,7 @@ const Conditions: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div className="bg-white bg-opacity-10 rounded-lg p-6">
-              <div className="text-3xl font-bold mb-2">300+</div>
+              <div className="text-3xl font-bold mb-2">3000+</div>
               <div className="text-blue-100">Patients Treated</div>
             </div>
             <div className="bg-white bg-opacity-10 rounded-lg p-6">
@@ -114,7 +114,7 @@ const Conditions: React.FC = () => {
               <div className="text-blue-100">Success Rate</div>
             </div>
             <div className="bg-white bg-opacity-10 rounded-lg p-6">
-              <div className="text-3xl font-bold mb-2">3+</div>
+              <div className="text-3xl font-bold mb-2">9+</div>
               <div className="text-blue-100">Years Experience</div>
             </div>
           </div>

@@ -105,7 +105,7 @@ const Testimonials: React.FC = () => {
             <div className="rounded-lg overflow-hidden aspect-video shadow-lg">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/TDyYJIv-csU"
+                src="https://www.youtube.com/embed/YYNuqyZYF38"
                 title="Clinic Introduction"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -117,7 +117,7 @@ const Testimonials: React.FC = () => {
             <div className="rounded-lg overflow-hidden aspect-video shadow-lg">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/TDyYJIv-csU"
+                src="https://www.youtube.com/embed/YYNuqyZYF38"
                 title="Treatment Process"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -129,7 +129,7 @@ const Testimonials: React.FC = () => {
             <div className="rounded-lg overflow-hidden aspect-video shadow-lg">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/TDyYJIv-csU"
+                src="https://www.youtube.com/embed/YYNuqyZYF38"
                 title="Patient Success Stories"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

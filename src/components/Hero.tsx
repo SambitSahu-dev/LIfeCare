@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
             </div>
             
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Physiotherapy Clinic in Bhubaneswar – 
+              Best Physiotherapy Clinic in Bhubaneswar – 
               <span className="text-blue-600"> faster relief, improve mobility, increase your hope</span>
             </h1>
             

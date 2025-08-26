@@ -66,7 +66,7 @@ const Services: React.FC = () => {
     {
       icon: Users,
       title: 'Experienced & Certified Physiotherapists',
-      description: 'Our team has 15+ years combined experience in Bhubaneswar'
+      description: 'Our team has 9+ years combined experience in Bhubaneswar'
     },
     {
       icon: Heart,

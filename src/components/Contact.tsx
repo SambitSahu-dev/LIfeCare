@@ -135,7 +135,7 @@ const Contact: React.FC = () => {
                     href="tel:8093909684"
                     className="text-blue-600 hover:text-blue-700"
                   >
-                    8093909684
+                    8093909684, 9861977896
                   </a>
                 </div>
               </div>

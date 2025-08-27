@@ -47,7 +47,7 @@ const Doctors: React.FC = () => {
     },
     {
       name: "Dr. Karttick Kumar Mahalik",
-      role: "Assistant Therapist",
+      role: "Assistant Physiotherapist",
       education: "BPT (Utkal University)",
       expertise: [
         "Orthopedic & Neurological Physiotherapy",

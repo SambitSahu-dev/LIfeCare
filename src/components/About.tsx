@@ -154,7 +154,7 @@ const About: React.FC = () => {
             }`}
           >
             <p className="text-sm text-gray-600 mb-6 leading-relaxed">
-              At Life Care, we focus on complete rehabilitation — relieving
+              At Arogya Life Care, we focus on complete rehabilitation — relieving
               pain, restoring mobility, and preventing future injuries. Whether
               you need physiotherapy for chronic back pain, sports injuries,
               neurological recovery, or post-surgical rehabilitation, our team

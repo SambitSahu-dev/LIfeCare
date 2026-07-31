@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone, Clock, MapPin } from 'lucide-react';
-import logo from '../assets/Life Care Logo_1.png';
+import logo from '../assets/Arogya Life Care Logo.png';
 
 interface HeaderProps {
   activeSection: string;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Instagram, Facebook, ExternalLink, Heart, Clock } from 'lucide-react';
-import logo from '../assets/Life Care Logo_1.png';
+import logo from '../assets/Arogya Life Care Logo.png';
 import sahnarLogo from '../assets/sahnar_logo_1.png';
 import { FaWhatsapp, FaYoutube } from "react-icons/fa";   // ✅ Added YouTube here
 

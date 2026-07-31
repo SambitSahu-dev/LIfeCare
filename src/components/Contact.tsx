@@ -104,17 +104,17 @@ const Contact: React.FC = () => {
                     Address
                   </h4>
                   <p className="text-gray-600">
-                    MIG 23 Samant Vihar, NALCO Square,
-                    Chandrasekharpur,
+                    Arogya Lifecare Physiotherapy Clinic
+                    Tarını Vihar,Harappa Block
                     <br />
-                    Infront of Gate No.2, 7th Battalion,
+                    Raghunathpur Jali,
                     <br />
-                    Bhubaneswar, Odisha – 751017
+                    Bhubaneswar, Odisha – 751024
                   </p>
 
                   <div className="mt-3">
                     <a
-                      href="https://www.google.com/maps/place/Lifecare+Physiotherapy+Clinic/"
+                      href="https://maps.app.goo.gl/YgdQ35MAsCVQ4hv36"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-lg text-xs font-medium transition-colors"

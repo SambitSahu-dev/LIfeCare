@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
             </h1>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Welcome to <span className="font-semibold text-blue-600">Life Care</span>, a leading
+              Welcome to <span className="font-semibold text-blue-600">Arogya Life Care</span>, a leading
               physiotherapy clinic in Bhubaneswar specializing in advanced treatment for back pain,
               arthritis, sports injuries, neurological conditions, and post-surgical rehabilitation.
               Our experienced physiotherapists provide evidence-based therapies, modern equipment,

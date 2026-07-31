@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
                 <img src={logo} alt="Life Care Logo" className="h-12 w-auto" />
               </button>
               <div>
-                <h2 className="text-2xl font-bold">Life Care</h2>
+                <h2 className="text-2xl font-bold">Arogya Life Care</h2>
                 <p className="text-blue-400">Physiotherapy Clinic</p>
               </div>
             </div>
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="https://wa.me/918093909684?text=Hello Team Life Care Physiotherapy Clinic, I would like to inquire about your services. Please contact me at your earliest convenience."
+                href="https://wa.me/918093909684?text=Hello Team Arogya Life Care Physiotherapy Clinic, I would like to inquire about your services. Please contact me at your earliest convenience."
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
@@ -108,16 +108,17 @@ const Footer: React.FC = () => {
               <div className="text-gray-300">
                 <p className="font-semibold mb-1">Visit Our Clinic</p>
                 <p className="text-sm">
-                  
-                  Lifecare Physiotherapy Clinic<br />
-                  Infront of Gate No.2, 7th Battalion,<br />
-                  MIG 23 Samant Vihar, NALCO Square, Chandrasekharpur,<br />                  
-                  Bhubaneswar, Odisha – 751016
+                              
+                  Arogya Lifecare Physiotherapy Clinic<br />
+                  Tarını Vihar,Harappa Block<br />
+                  Raghunathpur Jali,<br />                  
+                  Bhubaneswar, Odisha – 751024
                 </p>
 
                 <div className="mt-3">
                   <a
-                    href="https://www.google.com/maps/place/Lifecare+Physiotherapy+Clinic/"
+                    // href="https://www.google.com/maps/place/Lifecare+Physiotherapy+Clinic/"
+                    href= "https://maps.app.goo.gl/YgdQ35MAsCVQ4hv36"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-lg text-xs font-medium transition-colors"
@@ -158,7 +159,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col sm:flex-row items-center justify-between w-full">
             <p className="text-gray-400 text-sm mb-2 sm:mb-0">
-              © 2025 Life Care Physiotherapy Clinic. All rights reserved.
+              © 2026 Arogya Life Care Physiotherapy Clinic. All rights reserved.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-between w-full sm:w-auto space-y-2 sm:space-y-0 sm:space-x-6">

@@ -158,7 +158,7 @@ const Services: React.FC = () => {
 
         {/* Why Choose Us */}
         <div>
-          <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center">Why Choose Life Care?</h3>
+          <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center">Why Choose Arogya Life Care?</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {whyChooseUs.map((item, index) => (
               <div key={index} className="text-center">

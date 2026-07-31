@@ -142,8 +142,8 @@ const Footer: React.FC = () => {
 
             <div className="mt-4 lg:mt-0 w-full lg:w-[350px] h-[220px] rounded-lg overflow-hidden shadow-lg">
               <iframe
-                //src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.646674453694!2d85.81806749678954!3d20.314886899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909c0d3ce24e5%3A0x19e28de7e96e39d7!2sLife%20Care%20Neuro%20Clinic!5e0!3m2!1sen!2sin!4v1756137497114!5m2!1sen!2sin"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.6452891673475!2d85.822771!3d20.3149442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19097a23bc811b%3A0x5438ecae41594977!2sLifecare%20Physiotherapy%20Clinic!5e0!3m2!1sen!2sin!4v1756141877570!5m2!1sen!2sin"
+                // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.6452891673475!2d85.822771!3d20.3149442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19097a23bc811b%3A0x5438ecae41594977!2sLifecare%20Physiotherapy%20Clinic!5e0!3m2!1sen!2sin!4v1756141877570!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3740.2660598276248!2d85.82743897523882!3d20.371917081118113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDIyJzE4LjkiTiA4NcKwNDknNDguMSJF!5e0!3m2!1sen!2sin!4v1785486785645!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

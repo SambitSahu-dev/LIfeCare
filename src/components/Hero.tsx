@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
               <div className="flex items-center">
                 <MapPin className="w-5 h-5 text-blue-600 mr-2" />
                 <a
-                  href="https://www.google.com/maps?q=Life+Care+Physiotherapy+Clinic"
+                  href="https://maps.app.goo.gl/YgdQ35MAsCVQ4hv36"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-gray-600 hover:text-blue-600"
